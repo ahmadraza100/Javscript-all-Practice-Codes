@@ -28,6 +28,7 @@ function get(){
     // console.log(arr.toString());
 
     // console.log(document.documentURI);
+    
     // console.log(document.documentURI);
     // console.log(document.forms);
     // console.log(document.embeds)
