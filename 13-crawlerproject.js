@@ -1,12 +1,12 @@
-let search = "SQL" ; 
-let link = document.links;
-console.log(link);
-let personallink; 
+let linkkk = document.links;
+let str = "Css"
+var personallink;
 
-Array.from(link).forEach(function(a){
-        personallink = element.personallink;
-        if(personallink.includes(search)){
-            console.log(personallink);
-        }
-}
-);
+Array.from(linkkk).forEach(function() {
+    personallink = element.personallink;
+
+    if(personallinks.includes(str)){
+        console.log(personallink);
+    }
+})
+
