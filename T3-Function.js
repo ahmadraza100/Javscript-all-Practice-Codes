@@ -44,3 +44,8 @@ console.log("Hello");
 
 // emi();
 
+
+var a = ["dog " ,"cat"];
+a[100] = "dog" ;
+console.log(a.length);
+
