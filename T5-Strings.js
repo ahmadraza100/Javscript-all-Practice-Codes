@@ -207,9 +207,9 @@ let myClassName = new String("Second Semester");
 // var str = "              Hello         World!            ";
 // console.log(str.trim());
 
-var txt = "a, b,c d,e";   // String
-// console.log(txt.split(","));           // Split on commas
-// console.log( txt.split(" "));          // Split on spaces
-console.log(txt.split("|")); 
+// var txt = "a, b,c d,e";   // String
+// // console.log(txt.split(","));           // Split on commas
+// // console.log( txt.split(" "));          // Split on spaces
+// console.log(txt.split("|")); 
 
 
