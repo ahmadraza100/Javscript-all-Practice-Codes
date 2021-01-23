@@ -93,18 +93,117 @@ console.log("welcome");
 // car.run();
 
 
-function generalCar(name , speed){
-    this.myName = name ; 
-    this.topspeed = speed ; 
-    this.run = function (){
-        console.log(`${this.myName} is running`);  
-    }
+// function generalCar(name , speed){
+//     this.myName = name ; 
+//     this.topspeed = speed ; 
+//     this.run = function (){
+//         console.log(`${this.myName} is running`);  
+//     }
 
-}
- let car1 = new generalCar("Suzuki" , 170);
- let car2 = new generalCar("Tyota" , 190);
- let car3 = new generalCar("Hyundai" , 200);
+// }
+//  let car1 = new generalCar("Suzuki" , 170);
+//  let car2 = new generalCar("Tyota" , 190);
+//  let car3 = new generalCar("Hyundai" , 200);
 
-console.log(car1.run());
+// console.log(car1.run());
 
-// -------------<End of 27 video>----------------------
+// -------------<End of 27>----------------------
+
+
+
+// -------------<Start of 28>------------------
+// Object Prototype In javascript
+
+//Object literall object 
+ 
+// let obj = {
+//     name:"ahmad",
+//     class:"5",
+//     youtubeChannel:"Techtalks with Ahmad"
+// }
+// console.log(obj);
+
+
+ 
+// function generalCar(name , speed){
+//     this.myName = name ; 
+//     this.topspeed = speed ; 
+
+// }
+
+//  let car1 = new generalCar("Suzuki" , 170);
+//  let car2 = new generalCar("Tyota" , 190);
+//  let car3 = new generalCar("Hyundai" , 200);
+
+//  console.log(car2);
+
+//  generalCar.prototype.setName = function(carName){
+//      this.myName = carName;
+//  }
+//  car2.setName = prompt("Enter input");
+
+
+// -------------<End of 28>----------------------
+
+// function food(name, cat , price){
+    
+//     this.Myname = name ; 
+//     this.Mycat = cat ; 
+//     this.Myprice = price ; 
+    
+
+// }
+
+function food (name , price , cat){
+    this.Myname = name ;
+    this.Myprice = price ;
+    this.Mycat = cat ;
+}  
+
+
+let foodie  = new food("Qourma" , "Arabic" , 1000);
+
+console.log(foodie);
+console.log(` The price of ${foodie.Myname} is ${foodie.Myprice}  The catergory is ${foodie.Mycat} ` );
+food.prototype.Chefname = function (chef){
+    this.Myname = chef;
+   }
+   foodie.Chefname(prompt("Enter your name")) ;
+   console.log(foodie);
+   console.log(` The chef name is ${foodie.Myname} is ${foodie.Myprice}  The catergory is ${foodie.Mycat} ` );
+
+
+   let prop  = Object.entries(foodie);
+   console.log(prop);
+// prop.forEach(([key, value]) ,()=> {
+//     console.log(value);
+
+
+// });
+
+
+
+
+// function result( name, classs , marks ){
+    
+//     this.Name = name ; 
+//     this.Class = classs ; 
+//     this.Marks = marks ; 
+    
+// }
+
+  
+// function student(name , classs, marks){
+//    result.call(this, name, classs , marks);
+// }
+
+// let student1 = new student("Ahmad" , "Matric" , 80);
+// let student2 = new student("Raza" , "Matric" , 70);
+// let student3 = new student("Shafi" , "Matric" , 40);
+// console.log(student1);
+// console.log( `Your name is ${student1.Name} and your class is ${student1.Class} you got ${student1.Marks} marks`);
+// console.log(student2);
+// console.log( `Your name is ${student2.Name} and your class is ${student2.Class} you got ${student2.Marks} marks`);
+// console.log(student3);
+// console.log( `Your name is ${student3.Name} and your class is ${student3.Class} you got ${student3.Marks} marks`);
+// console.log(student1);
