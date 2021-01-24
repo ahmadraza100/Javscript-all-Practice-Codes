@@ -154,27 +154,27 @@ console.log("welcome");
 
 // }
 
-function food (name , price , cat){
-    this.Myname = name ;
-    this.Myprice = price ;
-    this.Mycat = cat ;
-}  
+// function food (name , price , cat){
+//     this.Myname = name ;
+//     this.Myprice = price ;
+//     this.Mycat = cat ;
+// }  
 
 
-let foodie  = new food("Qourma" , "Arabic" , 1000);
+// let foodie  = new food("Qourma" , "Arabic" , 1000);
 
-console.log(foodie);
-console.log(` The price of ${foodie.Myname} is ${foodie.Myprice}  The catergory is ${foodie.Mycat} ` );
-food.prototype.Chefname = function (chef){
-    this.Myname = chef;
-   }
-   foodie.Chefname(prompt("Enter your name")) ;
-   console.log(foodie);
-   console.log(` The chef name is ${foodie.Myname} is ${foodie.Myprice}  The catergory is ${foodie.Mycat} ` );
+// console.log(foodie);
+// console.log(` The price of ${foodie.Myname} is ${foodie.Myprice}  The catergory is ${foodie.Mycat} ` );
+// food.prototype.Chefname = function (chef){
+//     this.Myname = chef;
+//    }
+//    foodie.Chefname(prompt("Enter your name")) ;
+//    console.log(foodie);
+//    console.log(` The chef name is ${foodie.Myname} is ${foodie.Myprice}  The catergory is ${foodie.Mycat} ` );
 
 
-   let prop  = Object.entries(foodie);
-   console.log(prop);
+//    let prop  = Object.entries(foodie);
+//    console.log(prop);
 // prop.forEach(([key, value]) ,()=> {
 //     console.log(value);
 
@@ -207,3 +207,15 @@ food.prototype.Chefname = function (chef){
 // console.log(student3);
 // console.log( `Your name is ${student3.Name} and your class is ${student3.Class} you got ${student3.Marks} marks`);
 // console.log(student1);
+
+
+function Factory (name, location) {
+    this.name = name;
+    this.location = location;
+  }
+  function Food(name, location) {
+   Factory.call(this, name, location);
+   this.category = 'food';
+  }
+  const myFood = new Food('Nestle', 'UK' );
+  console.log(myFood);
