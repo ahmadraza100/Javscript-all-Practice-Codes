@@ -35,61 +35,74 @@
 
 
 
-// class student{
+class student{
     
-//     constructor(stuName,stuEmail,stuMarks){
-//     this.name = stuName;
-//     this.email = stuEmail;
-//     this.marks = stuMarks;
+    constructor(stuName,stuEmail,stuMarks){
+    this.name = stuName;
+    this.email = stuEmail;
+    this.marks = stuMarks;
 
-//         if(this.marks>=60){
-//        return this.marks;
-//     }
+        if(this.marks>=60){
+       return this.marks;
+    }
     
-//     if(this.marks>=40 && this.marks<60){
-//         return this.marks;
-//     }
-//     else{
-//         return this.marks;
+    if(this.marks>=40 && this.marks<60){
+        return this.marks;
+    }
+    else{
+        return this.marks;
         
-//         }
-// }
-// }
+        }
+}
+}
 
-// class Employee extends student{
-//     constructor(stuName,stuEmail,stuMarks , UniGpa ){
-//         super(stuName,stuEmail,stuMarks)
-//         this.gpa = UniGpa;
+class Employee extends student{
+    constructor(stuName,stuEmail,stuMarks , UniGpa ){
+        super(stuName,stuEmail,stuMarks)
+        this.gpa = UniGpa;
        
 
-//         if(this.gpa >3.8){
-//             console.log( ` Dear ${this.name} Your Performance is great and GPA is ${this.gpa} , We hire you "Senior" ` ); 
-//         }
+        if(this.gpa >3.8){
+            console.log( ` Dear ${this.name} Your Performance is great and GPA is ${this.gpa} , We hire you "Senior" ` ); 
+        }
 
-//         if(this.gpa >3 && this.gpa <3.9){
-//             console.log( ` Dear ${this.name} Your Performance was fine you scored ${this.gpa} GPA , We hire you "Employee" `) ; 
-//         }
-
-
-//         if(this.gpa <3){
-//             console.log( ` Dear ${this.name} Your Performance was poor and GPA is ${this.gpa} , We hire you "Sweeper" `) ; 
-//         }
+        if(this.gpa >3 && this.gpa <3.9){
+            console.log( ` Dear ${this.name} Your Performance was fine you scored ${this.gpa} GPA , We hire you "Employee" `) ; 
+        }
 
 
-// }
+        if(this.gpa <3){
+            console.log( ` Dear ${this.name} Your Performance was poor and GPA is ${this.gpa} , We hire you "Sweeper" `) ; 
+        }
 
-// }
 
-// faiq = new Employee("Faiq" , "Faiqbutt@gmail.com" , 70 , 3.7);
-// abdullah = new Employee("Abdullah" , "Faiqbutt@gmail.com" , 70 , 3);
-// saad =  new Employee("Saad" , "Faiqbutt@gmail.com" , 70 , 2.9);
-// faiq1 = new Employee("Hassan" , "Faiqbutt@gmail.com" , 70 , 4);
-// faiq2 = new Employee("Muneer" , "Faiqbutt@gmail.com" , 70 , 1.5);
-// faiq3 = new Employee("Ali" , "Faiqbutt@gmail.com" , 70 , 3.4);
-// faiq4 = new Employee("Imran" , "Faiqbutt@gmail.com" , 70 , 4);
-// faiq5 = new Employee("Sami" , "Faiqbutt@gmail.com" , 70 , 3.5);
-// faiq6 = new Employee("Ahmad" , "Faiqbutt@gmail.com" , 70 , 3.3);
+}
 
-// let array = Object.values(faiq);
-// console.log(array);
+}
+
+faiq = new Employee("Faiq" , "Faiqbutt@gmail.com" , 70 , 3.7);
+abdullah = new Employee("Abdullah" , "Faiqbutt@gmail.com" , 70 , 3);
+saad =  new Employee("Saad" , "Faiqbutt@gmail.com" , 70 , 2.9);
+faiq1 = new Employee("Hassan" , "Faiqbutt@gmail.com" , 70 , 4);
+faiq2 = new Employee("Muneer" , "Faiqbutt@gmail.com" , 70 , 1.5);
+faiq3 = new Employee("Ali" , "Faiqbutt@gmail.com" , 70 , 3.4);
+faiq4 = new Employee("Imran" , "Faiqbutt@gmail.com" , 70 , 4);
+faiq5 = new Employee("Sami" , "Faiqbutt@gmail.com" , 70 , 3.5);
+faiq6 = new Employee("Ahmad" , "Faiqbutt@gmail.com" , 70 , 3.3);
+
+let faiqq = Object.values(faiq);
+let saadd = Object.values(saad);
+let faiqq1 = Object.values(faiq1);
+
+faiqq1.forEach(function(value){
+    console.log(value);
+})
+
+faiqq.forEach(function(value){
+    console.log(value);
+})
+
+saadd.forEach(function(value){
+    console.log(value);
+})
 
